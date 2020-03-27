@@ -1,7 +1,7 @@
 # mysql
 
 ## Prerequisites
-Install MySQL by following guideline at this [site](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)\\
+Install MySQL by following guideline at this [site](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04). \
 Create a account with name = rick and password = bar. And then set full permission on rick database to it.
 ```
   mysql> CREATE USER 'rick'@"%" IDENTIFIED BY 'bar';
@@ -22,7 +22,7 @@ Follwing these command to create children table:
   mysql> insert to children(fname, age) values("Jenny", 14);
   
  ```
-## Conpile
+## Compile
 ```
   $ gcc -Iusr/include/mysql connect1.c -o connect1 -L/usr/lib/msql -lmysqlclient
   $ gcc connect2.c -o connect2 -L/usr/lib/msql -lmysqlclient
